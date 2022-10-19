@@ -5,7 +5,6 @@
  * @list: arguments
  * Return: how many characters has been printed
  */
-
 int _char(va_list list)
 {
 	_putchar(va_arg(list, int));
@@ -56,11 +55,6 @@ int _integer(va_list list)
 	}
 	num2 = num1;
 	while (num2 > 9)
-	{
-		div *= 10;
-		num2 = num2 / 10;
-	}
-	while (div >= 1)
 	{
 		num2 = num1 % div;
 		num1 /= div;
